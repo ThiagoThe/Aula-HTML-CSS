@@ -60,32 +60,32 @@
                             <fieldset id="usuario">
                                 <legend id="user">Identificação do Usuário</legend>
                                 <p><label for="cName">Nome:</label>
-                                <input type="text" name="tName" id="cName" size="50" maxlength="50" placeholder="Digite seu Nome Completo"/></p>
+                                <input type="text" name="tName" id="cName" size="50" maxlength="50" placeholder="Digite seu Nome Completo" required/></p>
                                 <p><label for="cPass">Senha:</label>
-                                <input type="password" name="tPass" id="cPass" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+                                <input type="password" name="tPass" id="cPass" size="8" maxlength="8" placeholder="8 dígitos" required/></p>
                                 <p><label for="cEmail">E-mail:</label>
-                                <input type="email" name="tEmail" id="cEmail" size="50" maxlength="50" placeholder="Digite seu E-mail" /></p>
+                                <input type="email" name="tEmail" id="cEmail" size="50" maxlength="50" placeholder="Digite seu E-mail" required /></p>
                                 
                                 <fieldset id="sexo">
                                     <legend id="sex">Sexo:</legend>
-                                    <input type="radio" name="tSex" id="cMasc"/><label for="cMasc">Masculino</label><br/>
-                                    <input type="radio" name="tSex" id="cFem"/><label for="cFem">Feminino</label>
+                                    <input type="radio" name="tSex" id="cMasc" value="Masculino"/><label for="cMasc">Masculino</label><br/>
+                                    <input type="radio" name="tSex" id="cFem" value="Feminino"/><label for="cFem">Feminino</label>
 
                                 </fieldset>
 
-                                <p>Data de Nascimento:<input type="date" name="tDate" id="cDate"/></p>
+                                <p>Data de Nascimento:<input type="date" name="tDate" id="cDate" required/></p>
                             </fieldset>
 
                             <fieldset id="endereco">
                                 <legend id="adress">Endereço do Usuário</legend>
                                 <p><label for="cStreet">Logradouro:</label>
-                                <input type="text" name="tStreet" id="cStreet" size="50" maxlength="80" placeholder="Rua/Avenida/Trav." /></p>
+                                <input type="text" name="tStreet" id="cStreet" size="50" maxlength="80" placeholder="Rua/Avenida/Trav." required/></p>
                                 <p><label for="cNum">Número:</label>
-                                <input type="number" name="tNum" id="cNum" min="0" max="99999"/>
+                                <input type="number" name="tNum" id="cNum" min="0" max="99999" required/>
                                   &nbsp; <label for="cApa">Apartamento:</label>
-                                <input type="number" name="tApa" id="cApa" min="0" max="99999" /></p>
+                                <input type="number" name="tApa" id="cApa" min="0" max="99999"/></p>
                                 <p><label for="cBairro">Bairro:</label> 
-                                <input type="text" name="tBairro" id="cBairro" size="30" maxlength="30" placeholder="Bairro" /></p>
+                                <input type="text" name="tBairro" id="cBairro" size="30" maxlength="30" placeholder="Bairro" required /></p>
                                 
                                 <p>Estado:
                                     <select name="tEst" id="cEst">
@@ -94,7 +94,7 @@
                                         <option value="RS">Rio Grande do Sul</option>
                                     </select></p>
                                 <p><label for="cCity">Cidade:</label>
-                                <input type="text" name="tCity" id="cCity" maxlength="40" size="30" placeholder="Sua Cidade" list="cidades"/>
+                                <input type="text" name="tCity" id="cCity" maxlength="40" size="30" placeholder="Sua Cidade" list="cidades" required/>
                                 <datalist id="cidades">
                                     <option value="Florianópolis"></option>
                                     <option value="Lages"></option>
@@ -117,7 +117,7 @@
                         
                             <fieldset id="pedido">
                                 <legend id="order">Quero um Google Glass</legend>
-                                <p><input type="checkbox" name="tAdq" id="cAdq" checked/>
+                                <p><input type="checkbox" name="tAdq" id="cAdq" value="" checked/>
                                 <label for="cAdq">Gostaria de adquirir um Google Glass quando disponível</label></p>
                                 <p><label for="cCor">Cor:</label>
                                 <input type="color" name="tCor" id="cCor"/></p>
